@@ -98,7 +98,7 @@
    &kp GRAVE &kp AT &kp LBRC &kp RBRC &kp PRCNT   &kp CARET &kp AMPS  &kp PIPE &kp BSLH &kp TILDE 
    &kp ESC   &kp EXCL &kp LPAR   &kp RPAR   &kp SQT      &kp ASTRK &kp MINUS &kp EQUAL       &kp NUHS &kp LS(NUHS) 
    &kp CAPS   &kp DLLR  &kp LBKT   &kp RBKT   &kp LS(SQT)      &kp HASH &kp UNDER &kp PLUS  &kp NUBS        &kp LS(NUBS)
-                    	     &kp LGUI &trans   &trans   &kb DEL   &trans    &kp RALT
+                    	     &kp LGUI &trans   &trans   &kp DEL   &trans    &kp RALT
                         >;
                 };
 
