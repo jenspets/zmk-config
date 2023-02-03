@@ -12,7 +12,7 @@
 #define COLEMAK 0
 #define QWERTY 1
 #define LOWER 2
-#define RAIRE 3
+#define RAISE 3
 #define ADJUST 4
 #define NAV 5
 #define NUM 6
