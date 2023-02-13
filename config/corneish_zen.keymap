@@ -65,8 +65,8 @@
 // | Z  |  X  |  C  |  D  |  V  |   |  K  |  H   |  ,  |  .  |  /  |
 //            | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                            bindings = <
-   &mt RALT Q    &kp W      &kp F &kp P       &kp B         &kp J &kp L        &kp U        &kp Y      &mt RALT SEMI
-   &mt LGUI A &mt LALT R &mt LCTRL S &mt LSHIFT T &kp G   &kp M &mt RSHIFT N &mt RCTRL E  &mt LALT I &mt LGUI O 
+   &kp Q    &kp W      &kp F &kp P       &kp B         &kp J &kp L        &kp U        &kp Y      &kp SEMI
+   &mt LGUI A &mt LALT R &mt LCTRL S &mt LSHIFT T &mt RALT G   &mt RALT M &mt RSHIFT N &mt RCTRL E  &mt LALT I &mt LGUI O 
    &lt NAV Z    &kp X      &kp C       &kp D        &kp V   &kp K &kp H        &kp COMMA    &kp DOT    &lt AUDIO FSLH
                   &kp LGUI &lt LOWER TAB &kp SPACE   &kp BSPC &lt RAISE ESC &kp RALT
                         >;
@@ -80,8 +80,8 @@
 // | Z      |  X  |  C  |  V  |  B  |   |  M  |  N   |  ,  |  .  |  /  |
 //            | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                            bindings = <
-   &mt RALT Q    &kp W      &kp E       &kp R        &kp T   &kp Y &kp U        &kp I        &kp O      &mt RALT P
-   &mt LGUI A &mt LALT S &mt LCTRL D &mt LSHIFT F &kp G   &kp H &mt RSHIFT J &mt RCTRL K  &mt LALT L &mt LGUI SEMI 
+   &kp Q    &kp W      &kp E       &kp R        &kp T   &kp Y &kp U        &kp I        &kp O      &kp P
+   &mt LGUI A &mt LALT S &mt LCTRL D &mt LSHIFT F &mt RALT G   &mt RALT H &mt RSHIFT J &mt RCTRL K  &mt LALT L &mt LGUI SEMI 
    &lt NAV Z    &kp X      &kp C       &kp V        &kp B   &kp N &kp M        &kp COMMA    &kp DOT    &lt AUDIO FSLH
                   &kp LGUI &lt LOWER TAB &kp SPACE   &kp BSPC &lt RAISE ESC &kp RALT
                         >;
