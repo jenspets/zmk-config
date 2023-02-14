@@ -59,11 +59,11 @@
 
                 default_layer {
                         label = "COLEMAK";
-// -----------------------------------------------------------------------------------------
-// | Q  |  W  |  F  |  P  |  B  |   |  J  |   L  |  U  |  Y  |  ;  |
-// | A  |  R  |  S  |  T  |  G  |   |  M  |  N   |  E  |  I  |  O  |
-// | Z  |  X  |  C  |  D  |  V  |   |  K  |  H   |  ,  |  .  |  /  |
-//            | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+// ------------------------------------------------------------------------------------------------------
+// |    Q   |    W   |    F    |    P     |    B   |   |    J   |     L    |    U    |   Y    |     ;   |
+// | LGUI/A | LALT/R | LCTRL/S | LSHIFT/T | RALT/G |   | RALT/M | RSHIFT/N | RCTRL/E | LALT/I |  LGUI/O |
+// | NAV/Z  |    X   |    C    |     D    |    V   |   |    K   |    H     |    ,    |    .   | AUDIO// |
+//                   |   GUI   |  LWR/TAB |   SPC  |   |  BSPC  | RSE/ESC  |   ALT   |
                            bindings = <
    &kp Q    &kp W      &kp F &kp P       &kp B         &kp J &kp L        &kp U        &kp Y      &kp SEMI
    &mt LGUI A &mt LALT R &mt LCTRL S &mt LSHIFT T &mt RALT G   &mt RALT M &mt RSHIFT N &mt RCTRL E  &mt LALT I &mt LGUI O 
@@ -74,11 +74,11 @@
 
 		qwerty_layer {
                         label = "QWERTY";
-// -----------------------------------------------------------------------------------------
-// | Rait/Q |  W  |  E  |  R  |  T  |   |  Y  |   U  |  I  |  O  |  Ralt/P  |
-// | A      |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |
-// | Z      |  X  |  C  |  V  |  B  |   |  M  |  N   |  ,  |  .  |  /  |
-//            | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+// ------------------------------------------------------------------------------------------------------
+// |    Q   |    W   |    E    |     R    |    T   |   |    Y   |     U    |    I    |    O   |     P   |
+// | LGUI/A | LALT/S | LCTRL/D | LSHIFT/F | RALT/G |   | RALT/H | RSHIFT/J | RCTRL/K | LALT/L |  LGUI/; |
+// | NAV/Z  |    X   |    C    |     V    |    B   |   |    M   |    N     |    ,    |    .   | AUDIO// |
+//                   |   GUI   |  LWR/TAB |   SPC  |   |  BSPC  | RSE/ESC  | ALT     |
                            bindings = <
    &kp Q    &kp W      &kp E       &kp R        &kp T   &kp Y &kp U        &kp I        &kp O      &kp P
    &mt LGUI A &mt LALT S &mt LCTRL D &mt LSHIFT F &mt RALT G   &mt RALT H &mt RSHIFT J &mt RCTRL K  &mt LALT L &mt LGUI SEMI 
@@ -90,11 +90,11 @@
 
                 lower_layer {
                         label = "LOWER";
-// ------------------------TODO------------------------------------------------------------
-// |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
-// |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |
-// |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |
-//             | GUI |     | SPC |   | ENT |     | ALT |
+// ---------------------------------------------------------------------------
+// |   `  |  @  |  {  |  }  |  %  |   |  ^  |    &   |  |  |   \  |     ~    |
+// |  ESC |  !  |  (  |  )  |  '  |   |  *  |    -   |  =  | NUHS | LS(NUHS) |
+// | CAPS |  $  |  [  |  ]  |  "  |   |  #  |    _   |  +  | NUBS | LS(NUBS) |
+//              | GUI |     |     |   | DEL | ADJUST | ALT |
                         bindings = <
    &kp GRAVE &kp AT &kp LBRC &kp RBRC &kp PRCNT   &kp CARET &kp AMPS  &kp PIPE &kp BSLH &kp TILDE 
    &kp ESC   &kp EXCL &kp LPAR   &kp RPAR   &kp SQT      &kp ASTRK &kp MINUS &kp EQUAL       &kp NUHS &kp LS(NUHS) 
@@ -105,11 +105,11 @@
 
                 raise_layer {
                         label = "RAISE";
-// ------------------------TODO-------------------------------------------------------------
-// |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |
-// | BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |
-// |     |     |     |     |     |   |     |     |     |     |     |
-//             | GUI |     | SPC |   | ENT |     | ALT |
+// --------------------------------------------------------------------------
+// |  1  |  2  |  3  |    4   |   5   |   |   6  |  7  |  8  |   9  |   0   |
+// |  F1 |  F2 |  F3 |    F4  |   F5  |   |  F6  |  F7 |  F8 |  F9  |  F10  |
+// | F11 | F12 | INS |  HOME  |  END  |   | PSCR | NAV | NUM |PG_UP | PG_DN |
+//             | GUI | ADJUST | ENTER |   |      |     | ALT |
                         bindings = <
    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 
    &kp F1 &kp F2 &kp F3 &kp F4 &kp F5   &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 
@@ -120,26 +120,26 @@
 
 		audio_layer {
 			    label = "AUDIO";
-// ------------------------TODO-------------------------------------------------------------
-// |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
-// |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |
-// |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |
-//             | GUI |     | SPC |   | ENT |     | ALT |
+// ------------------------------------------------------------------------------
+// |     |     |     |     |     |   |     |            |        |        |     |
+// |     |     |     |     |     |   |     |    MUTE    | VOL_DN | VOL_UP |     |
+// |     |     |     |     |     |   |     | PLAY_PAUSE |  PREV  |  NEXT  |     |
+//             |     |     |     |   |     |            | ALT |
                         bindings = <
-   &none &none &none &none &none  &none &none  &none &none &none 
-   &none   &none &none   &none   &none      &none  &kp C_MUTE &kp C_VOL_DN  &kp C_VOL_UP &none
-   &none &none  &none    &none   &none      &none  &kp C_PLAY_PAUSE &kp C_PREV &kp C_NEXT &trans
-                    	     &kp LGUI &trans   &trans   &trans   &tog NAV    &kp RALT
+   &none &none &none &none &none      &none  &kp K_MUTE &kp K_VOL_DN  &kp K_VOL_UP &none 
+   &none &none &none &none &none      &none  &kp C_MUTE &kp C_VOL_DN  &kp C_VOL_UP &none
+   &none &none &none &none &none      &none  &kp C_PLAY_PAUSE &kp C_PREV &kp C_NEXT &trans
+                    	     &kp LGUI &trans   &trans   &trans   &trans    &kp RALT
                         >;
                 };
 		
 		adjust_layer {
 			     label = "ADJUST";
-// ------------------------TODO-------------------------------------------------------------
-// |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
-// |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |
-// |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |
-//             | GUI |     | SPC |   | ENT |     | ALT |
+// ------------------------------------------------------------------------------
+// | BOOT | RESET |     |     |     |   |        |        |         |     |     |
+// |      |       |     |     |     |   |        | QWERTY | COLEMAK |     |     |
+// |  BT0 |  BT1  | BT2 | BT3 | BT4 |   | BT_CLR |        |         |     |     |
+//                | GUI |     |     |   |        |        | ALT |
                         bindings = <
    &bootloader &reset &trans &trans &trans   &trans &trans  &trans &trans &trans 
    &trans   &trans &trans   &trans   &trans      &trans &to QWERTY &to COLEMAK        &trans &trans
@@ -150,11 +150,12 @@
 
 		nav_layer {
 			  label = "NAV";
-// ------------------------TODO-------------------------------------------------------------
-// |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
-// |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |
-// |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |
-//             | GUI |     | SPC |   | ENT |     | ALT |
+// (Empty space left for mous controls and buttons)
+// --------------------------------------------------------------------------------
+// |     |      |       |        |      |   |     |       |       |       |       |
+// |     |      |       |        |      |   |     |  LEFT |  DOWN |   UP  | RIGHT |
+// |     | LALT | LCTRL | LSHIFT | LGUI |   | TAB |  HOME | PG_DN | PG_UP |  END  |
+//              |  GUI  |        |      |   |     | T_NAV |  ALT  |
                         bindings = <
    &none &none &none &none &none  &none &none  &none &none &none 
    &none   &none &none   &none   &none      &none  &kp LEFT &kp DOWN  &kp UP &kp RIGHT
@@ -165,11 +166,11 @@
 
 		num_layer {
 			  label = "NUM";
-// -------------------------TODO-------------------------------------------------------------
-// |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
-// |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |
-// |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |
-//             | GUI |     | SPC |   | ENT |     | ALT |
+// ------------------------------------------------------------------------------------
+// |       |  HOME |    UP   |   END  |  PG_UP  |   | NUMLK |   N7  |  N8 |  N9 | ENT |
+// |       |  LEFT |   DOWN  |  RIGHT |  PG_DN  |   |  DOT  |   N4  |  N5 |  N6 | TAB |
+// | N_DIV | N_MUL | N_MINUS | N_PLUS | N_COMMA |   |   N0  |   N1  |  N2 |  N3 | DEL |
+//                 |   GUI   |        |         |   |       | T_NUM | ALT |
                         bindings = <
    &none &kp HOME &kp UP &kp END &kp PG_UP  &kp KP_NUM &kp KP_N7  &kp KP_N8 &kp KP_N9 &kp KP_ENTER 
    &none   &kp LEFT &kp DOWN   &kp RIGHT   &kp PG_DN      &kp KP_DOT  &kp KP_N4 &kp KP_N5  &kp KP_N6 &kp TAB
