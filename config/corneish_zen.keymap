@@ -12,13 +12,15 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define COLEMAK 0
-#define QWERTY 1
-#define LOWER 2
-#define RAISE 3
-#define AUDIO 4
-#define ADJUST 5
-#define NAV 6
-#define NUM 7
+#define QWERTY  1  
+#define GAME    2
+#define GAME2   3
+#define LOWER   2
+#define RAISE   5
+#define AUDIO   6
+#define ADJUST  7
+#define NAV     8
+#define NUM     9
 
 &mt {
     flavor = "tap-preferred";
@@ -90,6 +92,35 @@
                         >;
                 };
 
+		game_layer {
+		        label = "GAME";
+// ---------------------------------------------------------------------------
+// |  TAB |  Q  |  W  |   E   |  R  |   |      |      |  UP  |   O   |  BS   |
+// | CTRL |  A  |  S  |   D   |  F  |   |      | LEFT | DOWN | RIGHT | KP 0  |
+// |      |  X  |  C  |   V   |  B  |   |      |      |      |       | ENTER |
+//              |     | GAME2 | SPC |   | BSPC |      |      |
+                           bindings = <
+   &kp TAB   &kp Q  &kp W  &kp E     &kp R       &none    &none    &kp UP   &none     &kp BSPC
+   &kp LCTRL &kp A  &kp S  &kp D     &kp F       &none    &kp LEFT &kp DOWN &kp RIGHT &kp N0
+   &none     &kp Z  &kp X  &kp C     &kp V       &none    &none    &none    &none     &kp ENTER
+                    &none  &mo GAME2 &kp SPACE   &kp BSPC &none    &none
+                        >;
+                };
+
+		game2_layer {
+		        label = "GAME2";
+// ----------------------------------------------------------
+// | F1 | F2 | F3 | F4 | F5 |   |   |         |    |    |   |
+// |  1 |  2 |  3 |  4 |  5 |   |   |         |    |    |   |
+// |    |    |    |    |    |   |   |         |    |    |   |
+//           |    |    |    |   |   | TG GAME |    |
+                           bindings = <
+   &kp F1 &kp F2 &kp F3 &kp F4 &kp F5   &none  &none    &none  &none  &none
+   &kp 1  &kp 2  &kp 3  &kp 4  &kp 5    &none  &none    &none  &none  &none
+   &none  &none  &none  &none  &none    &none  &none    &none  &none  &none
+                 &none  &trans &none    &none  &tg GAME &none
+                        >;
+                };			
 
                 lower_layer {
                         label = "LOWER";
