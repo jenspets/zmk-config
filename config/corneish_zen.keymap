@@ -186,10 +186,10 @@
 			  label = "NAV";
 // (Empty space left for mous controls and buttons)
 // --------------------------------------------------------------------------------
-// |     |      |       |        |      |   |     |       |       |       |       |
-// |     |      |       |        |      |   |     |  LEFT |  DOWN |   UP  | RIGHT |
-// |     | LALT | LCTRL | LSHIFT | LGUI |   | TAB |  HOME | PG_DN | PG_UP |  END  |
-//              |       |        |      |   |     | T_NAV |       |
+// |    | SCRL_LEFT  |  MOUSE_UP  | SCRL_RIGHT  | SCRL_UP |   | MOUSE_B4 | MOUSE_LCLK | MOUSE_MCLK | MOUSE_RCLK | MOUSE_B5 |
+// |    | MOUSE_LEFT | MOUSE_DOWN | MOUSE_RIGHT | SCRL_DN |   |          |     LEFT   |     DOWN   |     UP     |   RIGHT  |
+// |    |    LALT    |    LCTRL   |   LSHIFT    |   LGUI  |   |    TAB   |     HOME   |    PG_DN   |   PG_UP    |    END   |
+//                   |            |             |         |   |          |    T_NAV   |            |
                         bindings = <
    &none  &mwh SCROLL_LEFT &mmv MOVE_UP   &mwh SCROLL_RIGHT &mwh SCROLL_UP        &mkp MB4 &mkp LCLK  &mkp MCLK &mkp RCLK &mkp MB5 
    &none  &mmv MOVE_LEFT   &mmv MOVE_DOWN &mmv MOVE_RIGHT   &mwh SCROLL_DOWN      &none    &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT
