@@ -101,7 +101,7 @@
 //              |     | GAME2 | SPC |   | BSPC |      |      |
                            bindings = <
    &kp TAB   &kp Q  &kp W  &kp E     &kp R       &none    &none    &kp UP   &none     &kp BSPC
-   &kp LCTRL &kp A  &kp S  &kp D     &kp F       &none    &kp LEFT &kp DOWN &kp RIGHT &kp N0
+   &kp LCTRL &kp A  &kp S  &kp D     &kp F       &none    &kp LEFT &kp DOWN &kp RIGHT &kp KP_N0
    &none     &kp Z  &kp X  &kp C     &kp V       &none    &none    &none    &none     &kp ENTER
                     &none  &mo GAME2 &kp SPACE   &kp BSPC &none    &none
                         >;
