@@ -94,16 +94,16 @@
 
 		game_layer {
 		        label = "GAME";
-// ---------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |   E   |  R  |   |      |      |  UP  |   O   |  BS   |
-// | CTRL |  A  |  S  |   D   |  F  |   |      | LEFT | DOWN | RIGHT | KP 0  |
-// |      |  X  |  C  |   V   |  B  |   |      |      |      |       | ENTER |
-//              |     | GAME2 | SPC |   | BSPC |      |      |
+// --------------------------------------------------------------------------
+// |  TAB |  Q  |  W  |   E   |  R  |   |     |      |  UP  |   O   |  BS   |
+// | CTRL |  A  |  S  |   D   |  F  |   |     | LEFT | DOWN | RIGHT | KP 0  |
+// | SHFT |  X  |  C  |   V   |  B  |   |     |      |      |       | ENTER |
+//              |     | GAME2 | SPC |   | SPC |      |      |
                            bindings = <
-   &kp TAB   &kp Q  &kp W  &kp E     &kp R       &none    &none    &kp UP   &none     &kp BSPC
-   &kp LCTRL &kp A  &kp S  &kp D     &kp F       &none    &kp LEFT &kp DOWN &kp RIGHT &kp KP_N0
-   &none     &kp Z  &kp X  &kp C     &kp V       &none    &none    &none    &none     &kp ENTER
-                    &none  &mo GAME2 &kp SPACE   &kp BSPC &none    &none
+   &kp TAB   &kp Q  &kp W   &kp E     &kp R       &none     &none    &kp UP   &none     &kp BSPC
+   &kp LCTRL &kp A  &kp S   &kp D     &kp F       &none     &kp LEFT &kp DOWN &kp RIGHT &kp KP_N0
+   &kp LSHFT &kp Z  &kp X   &kp C     &kp V       &none     &none    &none    &none     &kp ENTER
+                    &kp ESC &mo GAME2 &kp SPACE   &kp SPACE &none    &none
                         >;
                 };
 
