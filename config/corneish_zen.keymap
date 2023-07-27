@@ -1,4 +1,4 @@
-/*
+/* -#- mode: dts-mode -*-
 *
 * Copyright (c) 2021 Darryl deHaan
 * SPDX-License-Identifier: MIT
@@ -66,13 +66,13 @@
                         label = "COLEMAK";
 // ------------------------------------------------------------------------------------------------------
 // |    Q   |    W   |    F    |    P     |    B   |   |    J   |     L    |    U    |   Y    |     ;   |
-// | LGUI/A | LALT/R | LCTRL/S | LSHIFT/T | RALT/G |   | RALT/M | RSHIFT/N | RCTRL/E | LALT/I |  LGUI/O |
-// | NAV/Z  |    X   |    C    |     D    |    V   |   |    K   |    H     |    ,    |    .   | AUDIO// |
+// | LGUI/A | LALT/R | LCTRL/S | LSHIFT/T |    G   |   |    M   | RSHIFT/N | RCTRL/E | LALT/I |  LGUI/O |
+// | NAV/Z  |    X   |    C    |  RALT/D  |    V   |   |    K   |  RALT/H  |    ,    |    .   | AUDIO// |
 //                   |    J    |  LWR/TAB |   SPC  |   |  BSPC  | RSE/ESC  |  ENTER  |
                            bindings = <
    &kp Q      &kp W      &kp F       &kp P         &kp B       &kp J      &kp L         &kp U       &kp Y      &kp SEMI
-   &mt LGUI A &mt LALT R &mt LCTRL S &mt LSHIFT T  &mt RALT G  &mt RALT M &mt RSHIFT N  &mt RCTRL E &mt LALT I &mt LGUI O 
-   &lt NAV Z  &kp X      &kp C       &kp D         &kp V       &kp K      &kp H         &kp COMMA   &kp DOT    &lt AUDIO FSLH
+   &mt LGUI A &mt LALT R &mt LCTRL S &mt LSHIFT T  &kp G       &kp M      &mt RSHIFT N  &mt RCTRL E &mt LALT I &mt LGUI O 
+   &lt NAV Z  &kp X      &kp C       &mt RALT D    &kp V       &kp K      &mt RALT H    &kp COMMA   &kp DOT    &lt AUDIO FSLH
                          &kp J       &lt LOWER TAB &kp SPACE   &kp BSPC   &lt RAISE ESC &kp ENTER
                         >;
                 };
@@ -100,7 +100,7 @@
 // | SHFT |  X  |  C  |   V   |  B  |   |     |      |      |       | ENTER |
 //              |     | GAME2 | SPC |   | SPC |      |      |
                            bindings = <
-   &kp TAB   &kp Q  &kp W   &kp E     &kp R       &none     &none    &kp UP   &none     &kp BSPC
+   &kp TAB   &kp Q  &kp W   &kp E     &kp R       &kp ESC   &none    &kp UP   &none     &kp BSPC
    &kp LCTRL &kp A  &kp S   &kp D     &kp F       &none     &kp LEFT &kp DOWN &kp RIGHT &kp KP_N0
    &kp LSHFT &kp Z  &kp X   &kp C     &kp V       &none     &none    &none    &none     &kp ENTER
                     &kp ESC &mo GAME2 &kp SPACE   &kp SPACE &none    &none
@@ -170,10 +170,10 @@
 		adjust_layer {
 			     label = "ADJUST";
 // ---------------------------------------------------------------------------------
-// | BOOT | RESET |     |     |     |   |         |        |         |     |        |
-// |      |       |     |     |     |   |         | QWERTY | COLEMAK |     |        |
-// |  BT0 |  BT1  | BT2 | BT3 | BT4 |   | OUT_TOG |        |         |     | BT_CLR |
-//                |     |     |     |   |         |        |         |
+// | BOOT | RESET |     |     |     |   |         |         |      |        |        |
+// |      |       |     |     |     |   |         | COLEMAK | GAME | QWERTY |        |
+// |  BT0 |  BT1  | BT2 | BT3 | BT4 |   | OUT_TOG |         |      |        | BT_CLR |
+//                |     |     |     |   |         |         |      |
                         bindings = <
    &bootloader  &reset       &trans       &trans       &trans       &trans       &trans      &trans   &trans     &trans 
    &trans       &trans       &trans       &trans       &trans       &trans       &to COLEMAK &to GAME &to QWERTY &trans
