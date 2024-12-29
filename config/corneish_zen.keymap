@@ -192,8 +192,8 @@
 // |    |    LALT    |    LCTRL   |   LSHIFT    |   LGUI  |   |    TAB   |     HOME   |    PG_DN   |   PG_UP    |    END   |
 //                   |            |             |         |   |          |    T_NAV   |            |
                         bindings = <
-   &none  &mwh SCROLL_LEFT &mmv MOVE_UP   &mwh SCROLL_RIGHT &mwh SCROLL_UP        &mkp MB4 &mkp LCLK  &mkp MCLK &mkp RCLK &mkp MB5 
-   &none  &mmv MOVE_LEFT   &mmv MOVE_DOWN &mmv MOVE_RIGHT   &mwh SCROLL_DOWN      &none    &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT
+   &none  &msc SCRL_LEFT   &mmv MOVE_UP   &msc SCRL_RIGHT   &msc SCRL_UP          &mkp MB4 &mkp LCLK  &mkp MCLK &mkp RCLK &mkp MB5 
+   &none  &mmv MOVE_LEFT   &mmv MOVE_DOWN &mmv MOVE_RIGHT   &msc SCRL_DOWN        &none    &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT
    &trans &kp LALT         &kp LCTRL      &kp LSHFT         &kp LGUI              &kp TAB  &kp HOME   &kp PG_DN &kp PG_UP &kp END
                     	   &trans         &trans            &trans                &trans   &tog NAV   &trans
                         >;
